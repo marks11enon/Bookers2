@@ -22,29 +22,29 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Users", users_path, class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Books", books_path, class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'nav-link text-light' %>
               </li>
             <% else %>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Home", root_path, class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "About", about_path, class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Sign up", new_user_registration_path, class: 'nav-link text-light' %>
               </li>
-              <li class="nav-item">
+              <li>
                 <%= link_to "Log in", new_user_session_path, class: 'nav-link text-light' %>
               </li>
             <% end %>
@@ -54,8 +54,10 @@
       </nav>
     </header>
     <main>
-      <%= render 'layouts/notification' %>
-      <%= yield %>
+      <p id="notce"><%= notice %></p>
+      <div class="container px-5 px-sm-0">
+        <%= yield %>
+      </div>
     </main>
     <footer>
       <div class="container mt-5">
