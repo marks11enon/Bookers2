@@ -24,44 +24,44 @@
             <% if user_signed_in? %>
               <li>
                 <%= link_to user_path(current_user.id), class: "nav-link text-light", method: :get do %>
-                  <i class="fas fa-home"></i> Home
+                  <i class="fas fa-home"></i><strong> Home</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to users_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-users"></i> Users
+                  <i class="fas fa-users"></i><strong> Users</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to books_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-book-open"></i> Books
+                  <i class="fas fa-book-open"></i><strong> Books</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to destroy_user_session_path, class: 'nav-link text-light', method: :delete do %>
-                  <i class="fas fa-sign-out-alt"></i> Log out
+                  <i class="fas fa-sign-out-alt"></i><strong> Log out</strong>
                 <% end %>
               </li>
 
             <% else %>
               <li>
                 <%= link_to root_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-home"></i> Home
+                  <i class="fas fa-home"></i><strong> Home</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to about_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-link"></i> About
+                  <i class="fas fa-link"></i><strong> About</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_user_registration_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-user-plus"></i> Sign up
+                  <i class="fas fa-user-plus"></i><strong> Sign up</strong>
                 <% end %>
               </li>
               <li>
                 <%= link_to new_user_session_path, class: 'nav-link text-light', method: :get do %>
-                  <i class="fas fa-sign-in-alt"></i> Log in
+                  <i class="fas fa-sign-in-alt"></i><strong> Log in</strong>
                 <% end %>
               </li>
             <% end %>
