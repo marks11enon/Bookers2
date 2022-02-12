@@ -268,74 +268,21 @@ Userモデルのテスト
     アバウト画面
 [32m      本のアイコンが表示される[0m
     ヘッダー: ログインしていない場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 1)[0m
-[31m      Aboutリンクのアイコンが表示される (FAILED - 2)[0m
-[31m      Sign upリンクのアイコンが表示される (FAILED - 3)[0m
-[31m      Log inリンクのアイコンが表示される (FAILED - 4)[0m
+[32m      Homeリンクのアイコンが表示される[0m
+[32m      Aboutリンクのアイコンが表示される[0m
+[32m      Sign upリンクのアイコンが表示される[0m
+[32m      Log inリンクのアイコンが表示される[0m
     ヘッダー: ログインしている場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 5)[0m
-[31m      Usersリンクのアイコンが表示される (FAILED - 6)[0m
-[31m      Booksリンクのアイコンが表示される (FAILED - 7)[0m
-[31m      Log outリンクのアイコンが表示される (FAILED - 8)[0m
+[32m      Homeリンクのアイコンが表示される[0m
+[32m      Usersリンクのアイコンが表示される[0m
+[32m      Booksリンクのアイコンが表示される[0m
+[32m      Log outリンクのアイコンが表示される[0m
     サイドバー
 [32m      ユーザ一覧画面でレンチアイコンが表示される[0m
 [32m      ユーザ詳細画面でレンチアイコンが表示される[0m
 [32m      投稿一覧画面でレンチアイコンが表示される[0m
 [32m      投稿詳細画面でレンチアイコンが表示される[0m
 
-Failures:
-
-  1) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-home'[0m
-     [31m  expected to find css ".fas.fa-home" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:382:in `block (4 levels) in <main>'[0m
-
-  2) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-link'[0m
-     [31m  expected to find css ".fas.fa-link" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:385:in `block (4 levels) in <main>'[0m
-
-  3) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-user-plus'[0m
-     [31m  expected to find css ".fas.fa-user-plus" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:388:in `block (4 levels) in <main>'[0m
-
-  4) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-sign-in-alt'[0m
-     [31m  expected to find css ".fas.fa-sign-in-alt" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:391:in `block (4 levels) in <main>'[0m
-
-  5) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-home'[0m
-     [31m  expected to find css ".fas.fa-home" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:406:in `block (4 levels) in <main>'[0m
-
-  6) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-users'[0m
-     [31m  expected to find css ".fas.fa-users" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:409:in `block (4 levels) in <main>'[0m
-
-  7) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-book-open'[0m
-     [31m  expected to find css ".fas.fa-book-open" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:412:in `block (4 levels) in <main>'[0m
-
-  8) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される
-     [31mFailure/Error: is_expected.to have_selector '.fas.fa-sign-out-alt'[0m
-     [31m  expected to find css ".fas.fa-sign-out-alt" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:415:in `block (4 levels) in <main>'[0m
-
-Finished in 31.59 seconds (files took 1.57 seconds to load)
-[31m199 examples, 8 failures[0m
-
-Failed examples:
-
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:381[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:384[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:387[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:390[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:405[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:408[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:411[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:414[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される[0m
+Finished in 28.77 seconds (files took 0.96067 seconds to load)
+[32m199 examples, 0 failures[0m
 
