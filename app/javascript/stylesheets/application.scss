@@ -1,2 +1,44 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.alert-notice {
+    color: green;
+}
+
+.navbar-nav li {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+.nav-link::before {
+  content: "";
+}
+
+.fa, .fas {
+  font-family: "Font Awesome 5 Free";
+  line-height: normal;
+
+  &.fa-home::before {
+    content: '\f015';
+  }
+}
+
+.error-mess {
+	color: red;
+}
