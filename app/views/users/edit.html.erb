@@ -3,22 +3,19 @@
     <h2>User info</h2>
     <%= render 'books/errors', error: @user %>
 
-    <%= form_for(@user) do |f| %>
+    <%= form_with model: @user, local: true do |f| %>
       <div class="form-group">
         <%= f.label :Name %><br>
         <%= f.text_field :name, :class => 'form-control name' %>
       </div>
-
       <div class="form-group">
         <%= f.label :Image %><br>
         <%= f.file_field :profile_image, class: "user_image" %>
       </div>
-
       <div class="form-group">
         <%= f.label :Introduction %><br>
         <%= f.text_area :introduction, class: "user_introduction" %>
       </div>
-
       <div class="form-group">
         <%= f.submit 'Update User', class:"btn btn-secondary" %>
       </div>
